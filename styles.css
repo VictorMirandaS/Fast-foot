@@ -1,0 +1,135 @@
+/* Estilos gerais */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C3DFE0;
+    color: #022F40;
+    min-height: 100%;
+    position: relative; /* Para rodapé ficar no final da página */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #6E7DAB;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: #6E7DAB;
+    padding: 10px 0; /* Ajustando o padding para 10px vertical e 0px horizontal */
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Tamanho da fonte reduzido para 14px */
+    height: 80px; /* Altura total do rodapé ajustada para 80px */
+}
+
+
+
+/* Estilos da seção Sobre a Loja */
+#sobre {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.sobre-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.sobre-img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.sobre-img img {
+    max-width: 100%;
+    display: block;
+    border-radius: 5%;
+}
+
+.sobre-texto {
+    flex: 1;
+    text-align: left;
+}
+
+/* Estilos da seção de Produtos*/
+#produtos {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.produto {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    
+}
+
+.produto img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.produto-info h3 {
+    margin-top: 0;
+}
+
+.adicionar-ao-carrinho {
+    background-color: #FFAD69;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adicionar-ao-carrinho:hover {
+    background-color: #FF8C42;
+} 
+
+
+/* Ajustes para tablets (iPad) */
+@media (max-width: 1024px) {
+    .container {
+        justify-content: space-between;
+    }
+
+    .produto {
+        width: calc(50% - 20px); /* 2 produtos por linha */
+    }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+    .produto {
+        width: calc(50% - 20px); /* 2 produtos por linha */
+    }
+}
+
+/* Ajustes para telas menores (móveis verticais) */
+@media (max-width: 480px) {
+    .produto {
+        width: calc(100% - 20px); /* 1 produto por linha */
+    }
+}
